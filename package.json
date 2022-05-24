@@ -1,0 +1,97 @@
+{
+    "name": "next-app-starter",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "lint": "next lint",
+        "start": "next start",
+        "prepare": "husky install",
+        "test": "jest",
+        "seed": "prisma db seed --preview-feature",
+        "db:push": "prisma db push --preview-feature",
+        "migrate:deploy": "prisma migrate deploy"
+    },
+    "dependencies": {
+        "@emotion/react": "11.9.0",
+        "@emotion/styled": "11.8.1",
+        "@heroicons/react": "1.0.6",
+        "@hookform/resolvers": "2.8.8",
+        "@mui/material": "5.6.2",
+        "@prisma/client": "3.12.0",
+        "@reduxjs/toolkit": "1.8.1",
+        "@tailwindcss/forms": "0.5.0",
+        "axios": "0.27.2",
+        "bcryptjs": "2.4.3",
+        "ejs": "3.1.8",
+        "email-templates": "9.0.0",
+        "next": "12.1.5",
+        "next-auth": "3.29.1",
+        "next-connect": "0.12.2",
+        "next-redux-wrapper": "7.0.5",
+        "next-secure-headers": "2.2.0",
+        "nodemailer": "6.7.5",
+        "react": "18.0.0",
+        "react-dom": "18.0.0",
+        "react-hook-form": "7.30.0",
+        "react-redux": "7.2.8",
+        "winston": "3.7.2",
+        "yup": "0.32.11"
+    },
+    "devDependencies": {
+        "@babel/core": "7.17.9",
+        "@testing-library/jest-dom": "5.16.4",
+        "@testing-library/react": "13.1.1",
+        "@trivago/prettier-plugin-sort-imports": "3.2.0",
+        "@types/jest": "27.4.1",
+        "@types/node": "17.0.31",
+        "@types/nodemailer": "6.4.4",
+        "@types/react": "18.0.5",
+        "@typescript-eslint/eslint-plugin": "5.20.0",
+        "@typescript-eslint/parser": "5.20.0",
+        "autoprefixer": "10.4.4",
+        "babel-eslint": "10.1.0",
+        "babel-jest": "27.5.1",
+        "babel-loader": "8.2.5",
+        "copy-webpack-plugin": "10.2.4",
+        "eslint": "7.32.0",
+        "eslint-config-next": "12.1.5",
+        "eslint-plugin-import": "2.26.0",
+        "husky": "7.0.4",
+        "identity-obj-proxy": "3.0.0",
+        "jest": "27.5.1",
+        "jest-fetch-mock": "3.0.3",
+        "jest-svg-transformer": "1.0.0",
+        "kutty": "0.6.0",
+        "lint-staged": "12.3.8",
+        "postcss": "8.4.12",
+        "prettier": "2.6.2",
+        "prisma": "3.12.0",
+        "sass": "1.51.0",
+        "tailwindcss": "3.0.24",
+        "ts-node": "10.7.0",
+        "typescript": "4.6.4"
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx}": [
+            "eslint --cache --fix",
+            "prettier --write"
+        ],
+        "*.{css,json,md,yml,yaml}": [
+            "prettier --write"
+        ]
+    },
+    "resolutions": {
+        "postcss": "8.4.12"
+    },
+    "babel": {
+        "presets": [
+            "next/babel"
+        ]
+    },
+    "prisma": {
+        "schema": "prisma/schema.prisma",
+        "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+    }
+}

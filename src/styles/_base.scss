@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+
+// Declare fonts
+@font-face {
+  font-family: $primary-font;
+  src: url('../statics/fonts/Verdana/verdana.ttf');
+}
+
+@font-face {
+  font-family: $primary-font-bold;
+  src: url('../statics/fonts/Verdana/verdanab.ttf');
+}
+
+@font-face {
+  font-family: $primary-font-extra-bold;
+  src: url('../statics/fonts/Verdana/Verdana Bold.ttf');
+}
+
+body {
+  font-family: $primary-font;
+}

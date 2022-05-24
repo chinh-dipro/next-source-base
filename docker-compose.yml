@@ -1,0 +1,12 @@
+version: '3'
+services:
+  nextjs-app:
+    container_name: nextjs-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    ports:
+      - "3000:3000"
+    volumes:
+      - "/data/logs:/app/logs"

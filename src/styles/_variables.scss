@@ -1,0 +1,50 @@
+/* General */
+$primary-color: #11065e;
+$secondary-color: #17c1ce;
+$disable-color: #d3e3ed;
+$positive-color: #00a63c;
+$positive-color-light: #11caa1;
+$negative-color: #fa003e;
+$negative-color-light: #ff8e8e;
+
+/* Fonts */
+$primary-font: 'Verdana Primary';
+$primary-font-bold: 'Verdana Bold';
+$primary-font-extra-bold: 'Verdana ExtraBold';
+
+/* Font sizes */
+$pixels-for-a-rem: 10px; // 1rem
+
+$font-size-xxxxlarge: 2.4rem; // 24px
+$font-size-xxxlarge: 2.2rem; // 22px
+$font-size-xxlarge: 2rem; // 20px
+$font-size-xlarge: 1.8rem; // 18px
+$font-size-large: 1.6rem; // 16px
+$font-size-medium: 1.4rem; // 14px
+$font-size-small: 1.3rem; // 13px
+$font-size-xsmall: 1.2rem; // 12px
+$font-size-xxsmall: 1.1rem; // 11px
+$font-size-xxxsmall: 1rem; // 10px
+$font-size-xxxxsmall: 0.8rem; // 8px
+
+$font-size-default: $font-size-medium;
+
+/* Responsive breakpoints */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+$device-breakpoints: (
+  mobile: 0,
+  tablet: 577px,
+  laptop: 769px,
+  desktop: 1025px,
+  large-desktop: 1201px,
+);
+
+$orientation-landscape: landscape;
+$orientation-portrait: portrait;
