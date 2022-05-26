@@ -17,7 +17,7 @@ model User {
   roles           UsersAndRoles[]
   createdAt       DateTime        @default(now()) @map(name: "created_at")
   updatedAt       DateTime        @default(now()) @map(name: "updated_at")
-
+  token           String          @unique
   @@map(name: "users")
 }
 

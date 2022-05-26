@@ -9,7 +9,16 @@ export async function checkExistingEmail(email: string): Promise<boolean> {
       email
     }
   });
-  return !user;
+  return !!user;
+}
+
+export async function checkExistingToken(token: string): Promise<boolean> {
+  const user = await prisma.user.findUnique({
+    where: {
+      token
+    }
+  });
+  return !!user;
 }
 
 export async function hashPassword(password: string): Promise<string> {
@@ -66,4 +75,12 @@ export async function getRoleIdsByRoleNames(roleNames: string[]): Promise<number
   });
 
   return ids;
+}
+
+export async function verifyAccount(token: string) {
+  const user = await prisma.user.update({ where: { token },
+    data: { emailVerifiedAt: new Date() }
+  });
+
+  return user;
 }

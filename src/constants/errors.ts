@@ -5,4 +5,5 @@ export const ERROR_MESSAGES = {
   NOT_FOUND: "Not found",
   EMAIL_ALREADY_TAKEN: "This email is already taken",
   INVALID_CREDENTIAL: "Username or password is not correct",
+  NOT_VERIFY: "Not verify"
 };
