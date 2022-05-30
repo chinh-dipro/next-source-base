@@ -4,6 +4,7 @@ import router from "next/router";
 import { useForm } from "react-hook-form";
 import { signIn } from "next-auth/client";
 import { Button } from "@mui/material";
+import Link from "next/link";
 
 import Layout from "components/common/Layout";
 import Error from "components/common/Error";
@@ -91,6 +92,12 @@ export default function SignIn() {
                 {errors.password && (
                   <Error message={errors.password.message}/>
                 )}
+              </div>
+              {/* Forgot password */}
+              <div>
+                <Link href={ROUTE.FORGOT_PASSWORD}>
+                  <a className="block float-right">Forgot your password?</a>
+                </Link>
               </div>
               {/*Submit*/}
               <Button

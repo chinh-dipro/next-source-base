@@ -17,6 +17,13 @@ export const signInSchema = yup.object().shape({
   password: yup.string().required("Password is required"),
 });
 
+export const forgotPasswordSchema = yup.object().shape({
+  email: yup
+    .string()
+    .email("Must be a valid email")
+    .required("Email is required"),
+});
+
 export const contactSchema = yup.object().shape({
   email: yup
     .string()
